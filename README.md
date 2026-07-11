@@ -72,11 +72,3 @@ Questions
 ↓
 
 Rewards
-
-## Current Status
-
-Week 1
-- Project Proposal Completed
-- Repository Initialized
-- Flutter Setup Complete
-- Folder Structure Created
