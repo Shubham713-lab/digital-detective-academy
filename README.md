@@ -1,17 +1,82 @@
-# detective_academy
+# Digital Detective Academy
 
-Digital Detective Academy is a story-based educational mobile application, developed using Flutter, that transforms the way learners engage with computer science and cybersecurity concepts.
+A story-based cybersecurity and computer science learning application built using Flutter.
 
-## Getting Started
+## Project Vision
 
-This project is a starting point for a Flutter application.
+Digital Detective Academy transforms cybersecurity education into an interactive detective adventure where learners solve cybercrime cases while learning computer science concepts.
 
-A few resources to get you started if this is your first Flutter project:
+## Objectives
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Learn cybersecurity through stories
+- Solve real-world cybercrime cases
+- Earn XP and badges
+- Track learning progress
+- Admin dashboard for managing cases
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Target Users
+
+- Students
+- Computer Science Learners
+- Cybersecurity Enthusiasts
+- Educators
+- Admins
+
+## Features
+
+- Story-Based Learning
+- Case Progression
+- XP & Rewards
+- Hint System
+- Progress Tracking
+- Admin Panel
+
+## Technology Stack
+
+- Flutter
+- Dart
+- Firebase (Future)
+- Android Studio
+
+## Project Structure
+
+```text
+lib/
+ ├── core/
+ ├── models/
+ ├── services/
+ ├── screens/
+ ├── widgets/
+ ├── providers/
+ └── main.dart
+```
+
+## Navigation Flow
+
+Splash Screen
+↓
+
+Login / Register
+↓
+
+Dashboard
+↓
+
+Case List
+↓
+
+Case Details
+↓
+
+Questions
+↓
+
+Rewards
+
+## Current Status
+
+Week 1
+- Project Proposal Completed
+- Repository Initialized
+- Flutter Setup Complete
+- Folder Structure Created
