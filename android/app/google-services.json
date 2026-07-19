@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373568199465",
+    "project_id": "detective-academy-1bd88",
+    "storage_bucket": "detective-academy-1bd88.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373568199465:android:17dd628b5495ed05a2b538",
+        "android_client_info": {
+          "package_name": "com.excelerate.mad.detective_academy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBR-3ZlyPEspJ3bo3oSTXR8FMordJvF2Vk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

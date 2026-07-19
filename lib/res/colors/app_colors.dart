@@ -16,4 +16,10 @@ class AppColors {
   static const Color outline = Color(0xFF9B8F7A);
 
   static const Color error = Color(0xFFFFB4AB);
+
+
+
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color fieldBackground = Color(0xFF1E1E1E);
+
 }
