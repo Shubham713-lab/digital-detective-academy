@@ -6,7 +6,7 @@ A story-based **Cybersecurity Learning Application** built using **Flutter** and
 
 # 📖 Project Vision
 
-Digital Detective Academy gamifies cybersecurity education by allowing learners to investigate cybercrime cases, solve security challenges, and strengthen their cybersecurity knowledge through immersive storytelling and practical investigations.
+Digital Detective Academy gamifies cybersecurity education by allowing learners to investigate cybercrime cases, solve security challenges, and strengthen their cybersecurity knowledge through immersive storytelling.
 
 ---
 
@@ -39,11 +39,11 @@ Digital Detective Academy gamifies cybersecurity education by allowing learners 
 - 📖 Investigation Briefings
 - 🎯 Level-Based Progression
 - ❓ Interactive Multiple Choice Questions
-- 🏆 Result & Performance Tracking
-- 👤 User Profile Management
-- 📊 Progress Monitoring
+- 🏆 Performance Tracking
+- 👤 User Profile
+- 📊 Learning Progress Monitoring
 - 🔒 Sequential Level Unlocking
-- 🎨 Modern Cyber-Themed User Interface
+- 🎨 Modern Cyber-Themed UI
 
 ---
 
@@ -85,15 +85,19 @@ lib/
 
 # 📱 Application Modules
 
-## 1. Splash Screen
+## 1️⃣ Splash Screen
 
-The Splash Screen serves as the entry point of the application. It displays the Detective Academy logo with a cyber-themed interface while initializing required services before navigating to the authentication flow.
+The Splash Screen serves as the entry point of the application. It displays the Detective Academy logo with a cyber-themed interface while initializing the application before navigating to authentication.
+
+<p align="center">
+<img src="screenshots/Splash%20Screen.png" width="300"/>
+</p>
 
 ---
 
-## 2. Login Screen
+## 2️⃣ Login Screen
 
-Allows registered users to securely sign in using Firebase Authentication. Users can log in with their email and password or navigate to the Sign Up screen to create a new account.
+Allows registered users to securely log in using Firebase Authentication.
 
 ### Features
 
@@ -102,11 +106,15 @@ Allows registered users to securely sign in using Firebase Authentication. Users
 - Firebase Login
 - Navigation to Registration
 
+<p align="center">
+<img src="screenshots/Login%20Screen.png" width="300"/>
+</p>
+
 ---
 
-## 3. Sign Up Screen
+## 3️⃣ Sign Up Screen
 
-Enables new users to create an account by entering their name, email, and password. User information is securely stored using Firebase Authentication and Cloud Firestore.
+New users can create an account using Firebase Authentication and Cloud Firestore.
 
 ### Features
 
@@ -114,25 +122,33 @@ Enables new users to create an account by entering their name, email, and passwo
 - Firebase Authentication
 - Cloud Firestore Integration
 
+<p align="center">
+<img src="screenshots/Sign%20Up%20Screen.png" width="300"/>
+</p>
+
 ---
 
-## 4. Home Dashboard
+## 4️⃣ Home Dashboard
 
-Provides an overview of the user's learning journey and investigation progress.
+Provides an overview of the learner's progress and recent investigations.
 
 ### Displays
 
-- Experience Points (XP)
-- Earned Badges
-- Completed Investigations
+- XP
+- Badges
+- Completed Cases
 - Recent Activity
-- Quick Start Investigation Button
+- Start Investigation
+
+<p align="center">
+<img src="screenshots/Home%20Dashboard.png" width="300"/>
+</p>
 
 ---
 
-## 5. Courses Screen
+## 5️⃣ Courses Screen
 
-Displays available cybersecurity investigation courses with their titles and descriptions, allowing learners to choose different cybersecurity learning paths.
+Displays available cybersecurity investigation courses that users can choose to begin their learning journey.
 
 ### Features
 
@@ -140,11 +156,15 @@ Displays available cybersecurity investigation courses with their titles and des
 - Investigation Categories
 - Course Navigation
 
+<p align="center">
+<img src="screenshots/Courses%20Screen.png" width="300"/>
+</p>
+
 ---
 
-## 6. Briefing Screen
+## 6️⃣ Briefing Screen
 
-Introduces the selected investigation by presenting an operational briefing, mission overview, and detailed cybercrime scenario before the investigation begins.
+Provides the mission briefing, operational details, and cybercrime scenario before starting an investigation.
 
 ### Displays
 
@@ -153,11 +173,15 @@ Introduces the selected investigation by presenting an operational briefing, mis
 - Case Description
 - Investigation Details
 
+<p align="center">
+<img src="screenshots/Briefing%20Screen.png" width="300"/>
+</p>
+
 ---
 
-## 7. Levels Screen
+## 7️⃣ Levels Screen
 
-Each investigation is divided into multiple levels representing different stages of the cyber investigation. Locked, unlocked, and completed levels are visually distinguished.
+Each investigation contains multiple levels that unlock sequentially as users progress.
 
 ### Features
 
@@ -166,74 +190,62 @@ Each investigation is divided into multiple levels representing different stages
 - Completed Levels
 - Progress Tracking
 
+<p align="center">
+<img src="screenshots/Levels%20Screen.png" width="300"/>
+</p>
+
 ---
 
-## 8. Question Screen
+## 8️⃣ Question Screen
 
-Users solve investigation challenges by answering interactive multiple-choice cybersecurity questions based on the current case.
+Interactive multiple-choice questions allow learners to analyze cybersecurity scenarios and complete investigations.
 
 ### Features
 
 - Multiple Choice Questions
-- Progress Indicator
 - Hint System
+- Progress Indicator
 - Answer Submission
+
+<p align="center">
+<img src="screenshots/Question%20Screen.png" width="300"/>
+</p>
 
 ---
 
-## 9. Result Screen
+## 9️⃣ Result Screen
 
-Displays the user's performance after completing an investigation level.
+Displays the learner's performance after completing a level.
 
 ### Displays
 
 - Final Score
+- Accuracy
 - Correct Answers
-- Accuracy Percentage
 - Investigation Result
-- Continue Button
+
+<p align="center">
+<img src="screenshots/Result%20Screen.png" width="300"/>
+</p>
 
 ---
 
-## 10. Profile Screen
+## 🔟 Profile Screen
 
-Displays the user's investigation profile and overall learning statistics.
+Displays user information, achievements, and learning statistics.
 
-### Information Displayed
+### Displays
 
-- User Name
-- Investigator Rank
+- Investigator Name
+- Rank
 - Cases Solved
-- Accuracy Percentage
-- Achievements
+- Accuracy
+- Achievement Gallery
 - Account Settings
 - Privacy & Security
-- Achievement Gallery
-
----
-
-# 📸 Application Screens
 
 <p align="center">
-  <img src="screenshots/Splash%20Screen.png" width="220"/>
-  <img src="screenshots/Login%20Screen.png" width="220"/>
-  <img src="screenshots/Sign%20Up%20Screen.png" width="220"/>
-</p>
-
-<p align="center">
-  <img src="screenshots/Home%20Dashboard.png" width="220"/>
-  <img src="screenshots/Courses%20Screen.png" width="220"/>
-  <img src="screenshots/Briefing%20Screen.png" width="220"/>
-</p>
-
-<p align="center">
-  <img src="screenshots/Levels%20Screen.png" width="220"/>
-  <img src="screenshots/Question%20Screen.png" width="220"/>
-</p>
-
-<p align="center">
-  <img src="screenshots/Result%20Screen.png" width="220"/>
-  <img src="screenshots/Profile%20Screen.png" width="220"/>
+<img src="screenshots/Profile%20Screen.png" width="300"/>
 </p>
 
 ---
@@ -242,30 +254,30 @@ Displays the user's investigation profile and overall learning statistics.
 
 ```text
 Splash Screen
-       │
-       ▼
+      │
+      ▼
 Login / Sign Up
-       │
-       ▼
+      │
+      ▼
 Home Dashboard
-       │
-       ▼
+      │
+      ▼
 Courses
-       │
-       ▼
+      │
+      ▼
 Investigation Briefing
-       │
-       ▼
+      │
+      ▼
 Levels
-       │
-       ▼
+      │
+      ▼
 Question Screen
-       │
-       ▼
+      │
+      ▼
 Result Screen
-       │
-       ▼
-Next Level / Dashboard
+      │
+      ▼
+Dashboard
 ```
 
 ---
@@ -279,15 +291,14 @@ Next Level / Dashboard
 
 # 🚀 Future Enhancements
 
-- 🏆 Leaderboard System
-- 📅 Daily Cyber Challenges
-- 🎖 Achievement & Reward System
+- 🏆 Leaderboards
+- 🎖 Achievement System
 - 🔔 Push Notifications
 - 👨‍💼 Admin Dashboard
-- 🎯 Difficulty Levels
-- 🔊 Sound Effects & Background Music
-- 📈 Advanced User Analytics
-- 🌐 Offline Learning Support
+- 📈 Analytics Dashboard
+- 🌐 Offline Learning
+- 🔊 Sound Effects
+- 📅 Daily Challenges
 
 ---
 
