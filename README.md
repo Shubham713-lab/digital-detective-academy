@@ -34,6 +34,7 @@ Digital Detective Academy gamifies cybersecurity education by allowing learners 
 
 - 🔐 Firebase Authentication
 - 👤 User Registration & Login
+- 🗄️ Firebase Realtime Database Integration
 - 📚 Cybersecurity Investigation Courses
 - 🕵️ Story-Based Learning
 - 📖 Investigation Briefings
@@ -43,8 +44,12 @@ Digital Detective Academy gamifies cybersecurity education by allowing learners 
 - 👤 User Profile
 - 📊 Learning Progress Monitoring
 - 🔒 Sequential Level Unlocking
+- 📝 Feedback Form with Validation
+- ⭐ Feedback Rating System
+- 🔄 Loading & Error Handling
+- 🚪 Secure Logout
 - 🎨 Modern Cyber-Themed UI
-
+  
 ---
 
 # 🛠 Technology Stack
@@ -52,9 +57,11 @@ Digital Detective Academy gamifies cybersecurity education by allowing learners 
 - Flutter
 - Dart
 - Firebase Authentication
+- Firebase Realtime Database
 - Cloud Firestore
+- Riverpod
 - Android Studio
-
+ 
 ---
 
 # 📂 Project Structure
@@ -75,13 +82,69 @@ lib/
 │   ├── questions/
 │   ├── results/
 │   └── profile/
+|   └── Feedback/
 │
 ├── widgets/
 ├── providers/
 └── main.dart
 ```
-
 ---
+
+# 📅 Week 3 Updates
+
+This week, the application was enhanced with backend integration, dynamic data handling, form validation, and improved user authentication.
+
+### 📡 Dynamic Program Data
+
+- Connected the Program Listing screen to sample JSON/mock API data.
+- Program information is loaded dynamically instead of being hardcoded.
+- Program Details screen displays data based on the selected program.
+- Added loading state while retrieving program data.
+- Added error handling for failed data retrieval.
+
+### 🔌 Backend & Data Integration
+
+- Connected user registration with Firebase Authentication.
+- Added Firebase Realtime Database integration for storing user profiles.
+- User name and email are stored using the authenticated user's UID.
+- Added Firebase Realtime Database integration for feedback submissions.
+- Feedback includes name, email, subject, message, rating, user ID, and timestamp.
+
+### 📝 Form Validation
+
+- Added validation to the Feedback form.
+- Name cannot be empty.
+- Email must be valid.
+- Subject cannot be empty.
+- Feedback cannot be empty.
+- Feedback must contain at least 20 characters.
+- Users must select a rating before submitting feedback.
+
+### ⏳ Loading & Error Handling
+
+- Added loading indicators during feedback submission.
+- Added success messages after successful submission.
+- Added error messages when submission fails.
+- Added authentication error handling for login and registration.
+- Added automatic navigation based on authentication status.
+
+### 🔐 Authentication Improvements
+
+- Added persistent Firebase authentication session handling.
+- Logged-in users are automatically redirected to the main application.
+- Logged-out users are redirected to the Login screen.
+- Added Firebase logout functionality.
+- Users are redirected to the Login screen after logout.
+
+### 📱 User Experience Improvements
+
+- Added profile data retrieval from Firebase Realtime Database.
+- Added profile loading and error handling.
+- Added feedback form reset after successful submission.
+- Improved navigation and authentication flow.
+---
+
+# 📅 Week 2 Updates
 
 # 📱 Application Modules
 
@@ -114,13 +177,14 @@ Allows registered users to securely log in using Firebase Authentication.
 
 ## 3️⃣ Sign Up Screen
 
-New users can create an account using Firebase Authentication and Cloud Firestore.
+New users can create an account using Firebase Authentication. User profile information, including name and email, is stored in Firebase Realtime Database.
 
 ### Features
 
 - User Registration
 - Firebase Authentication
-- Cloud Firestore Integration
+- User Profile Storage
+- Firebase Realtime Database Integration
 
 <p align="center">
 <img src="screenshots/Sign%20Up%20Screen.png" width="300"/>
@@ -250,6 +314,32 @@ Displays user information, achievements, and learning statistics.
 
 ---
 
+---
+
+## 1️⃣1️⃣ Feedback Screen
+
+The Feedback Screen allows users to submit feedback about their experience with the Digital Detective Academy application.
+
+### Features
+
+- Name Validation
+- Email Validation
+- Subject Validation
+- Feedback Content Validation
+- Minimum 20 Character Requirement
+- 1–5 Star Rating System
+- Loading Indicator During Submission
+- Success and Error Messages
+- Firebase Realtime Database Integration
+
+Submitted feedback is stored in Firebase Realtime Database with the user's information, rating, unique user ID, and submission timestamp.
+
+<p align="center">
+<img src="screenshots/Feedback%20Screen.png" width="300"/>
+</p>
+
+---
+
 # 🔄 Navigation Flow
 
 ```text
@@ -285,8 +375,28 @@ Dashboard
 # 🔥 Firebase Services Used
 
 - Firebase Authentication
-- Cloud Firestore
+- Firebase Realtime Database
 
+### Firebase Realtime Database Structure
+
+```text
+Users
+ └── User UID
+      ├── name
+      ├── email
+      ├── userId
+      └── createdAt
+
+Feedback
+ └── Feedback ID
+      ├── feedbackId
+      ├── userId
+      ├── name
+      ├── email
+      ├── subject
+      ├── feedback
+      ├── rating
+      └── createdAt
 ---
 
 # 🚀 Future Enhancements
