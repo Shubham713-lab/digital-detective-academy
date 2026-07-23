@@ -17,6 +17,10 @@ class SettingTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      hoverColor: Colors.transparent,
+      focusColor: Colors.transparent,
       borderRadius: BorderRadius.circular(28),
       onTap: onTap,
       child: Container(

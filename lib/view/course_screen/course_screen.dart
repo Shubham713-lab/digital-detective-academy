@@ -1,18 +1,39 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../res/colors/app_colors.dart';
 import '../../res/widgets/custom_app_bar.dart';
 import '../../view_model/briefing_viewmodel.dart';
 
+import '../../view_model/course/course_viewmodel.dart';
 import '../briefing_screen/briefing_screen.dart';
 
-class CoursesScreen extends StatelessWidget {
+class CoursesScreen extends ConsumerStatefulWidget {
   CoursesScreen({super.key});
 
-  final vm = CoursesViewModel();
+  @override
+  ConsumerState<CoursesScreen> createState() => _CoursesScreenState();
+}
 
+class _CoursesScreenState extends ConsumerState<CoursesScreen> {
+  // final vm = CoursesViewModel();
   @override
   Widget build(BuildContext context) {
+    final state = ref.watch(courseProvider);
+
+    if (state.isLoading) {
+      return const Center(
+        child: CircularProgressIndicator(),
+      );
+    }
+
+    if (state.error != null) {
+      return Center(
+        child: Text(state.error!),
+      );
+    }
+
+    final courses = state.courses;
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: const CustomAppBar(
@@ -82,7 +103,7 @@ class CoursesScreen extends StatelessWidget {
                     ),
                   ),
                   child: Text(
-                    "${vm.courses.length} COURSES",
+                    "${courses.length} COURSES",
                     style: const TextStyle(
                       color: AppColors.secondary,
                       fontSize: 12,
@@ -98,10 +119,10 @@ class CoursesScreen extends StatelessWidget {
 
             Expanded(
               child: ListView.separated(
-                itemCount: vm.courses.length,
+                itemCount: courses.length,
                 separatorBuilder: (_, __) => const SizedBox(height: 16),
                 itemBuilder: (context, index) {
-                  final course = vm.courses[index];
+                  final course = courses[index];
 
                   return InkWell(
                     borderRadius: BorderRadius.circular(20),
@@ -109,12 +130,14 @@ class CoursesScreen extends StatelessWidget {
                       Navigator.push(
                         context,
                         PageRouteBuilder(
-                          pageBuilder: (_, __, ___) => BriefingScreen(course: course,),
+                          pageBuilder: (_, __, ___) => BriefingScreen(
+                            course: course,
+                          ),
                           transitionDuration: Duration.zero,
                           reverseTransitionDuration: Duration.zero,
                         ),
                       );
-                     },
+                    },
                     child: Container(
                       padding: const EdgeInsets.all(20),
                       decoration: BoxDecoration(
@@ -161,8 +184,8 @@ class CoursesScreen extends StatelessWidget {
                                   course.subtitle,
                                   style: const TextStyle(
                                     color: AppColors.secondary,
-                                    height: 1.4,
                                     fontSize: 14,
+                                    height: 1.4,
                                   ),
                                 ),
                               ],

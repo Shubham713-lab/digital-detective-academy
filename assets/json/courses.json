@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "title": "Phishing Awareness",
+    "subtitle": "Learn how phishing attacks work and protect yourself from malicious emails.",
+    "scenario": "A company employee receives an email claiming to be from the IT department asking them to verify their account credentials. The email looks genuine but contains a fake login page designed to steal usernames and passwords. As a Digital Detective, identify the phishing indicators and prevent the attack.",
+    "tags": ["#PHISHING", "#EMAIL_SECURITY", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: Suspicious Email",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "Which sign most likely indicates a phishing email?",
+            "options": ["Urgent request for personal information", "Official company logo", "Proper grammar", "Secure HTTPS website"],
+            "correctAnswerIndex": 0,
+            "hint": "Attackers create urgency to trick users."
+          },
+          {
+            "question": "What should you do before clicking a link?",
+            "options": ["Hover over it", "Click immediately", "Forward to everyone", "Ignore antivirus warnings"],
+            "correctAnswerIndex": 0,
+            "hint": "Check the destination URL first."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Fake Login",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is the safest action?",
+            "options": ["Report the email", "Enter credentials", "Download attachment", "Reply to sender"],
+            "correctAnswerIndex": 0,
+            "hint": "Always report suspicious emails."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Password Security",
+    "subtitle": "Master the fundamentals of creating and managing strong passwords.",
+    "scenario": "An employee uses the same simple password across multiple work and personal accounts. When one site is breached, attackers try the same credentials on other services. As a Digital Detective, uncover the weaknesses in password habits and recommend safer practices.",
+    "tags": ["#PASSWORDS", "#AUTHENTICATION", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: Weak Password",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "Which password is the strongest?",
+            "options": ["Tr@il#Mtn92$Kite", "password123", "qwerty", "123456789"],
+            "correctAnswerIndex": 0,
+            "hint": "Length and randomness matter more than familiar words."
+          },
+          {
+            "question": "Why is reusing passwords risky?",
+            "options": ["One breach compromises many accounts", "It's faster to remember", "It's more secure", "It prevents phishing"],
+            "correctAnswerIndex": 0,
+            "hint": "Think about credential stuffing attacks."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Credential Stuffing",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What tool helps manage unique passwords safely?",
+            "options": ["A password manager", "A sticky note", "A shared spreadsheet", "Browser autofill only"],
+            "correctAnswerIndex": 0,
+            "hint": "Consider tools designed to store credentials securely."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Social Engineering",
+    "subtitle": "Recognize manipulation tactics used to trick people into revealing information.",
+    "scenario": "A caller pretending to be from the help desk asks an employee to confirm their login details to 'fix an urgent issue.' As a Digital Detective, spot the manipulation tactics being used.",
+    "tags": ["#SOCIAL_ENGINEERING", "#VISHING", "INTERMEDIATE"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Helpful Caller",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What tactic is the caller using?",
+            "options": ["Impersonating authority", "Offering a discount", "Sending a newsletter", "Requesting feedback"],
+            "correctAnswerIndex": 0,
+            "hint": "Attackers often pose as trusted figures like IT staff."
+          },
+          {
+            "question": "What should you never share over an unsolicited call?",
+            "options": ["Passwords or verification codes", "Your job title", "Your department name", "Public office hours"],
+            "correctAnswerIndex": 0,
+            "hint": "Sensitive credentials should never be given verbally."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Pretexting",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is the best response to a suspicious caller?",
+            "options": ["Verify identity through official channels", "Give partial information", "Hang up without reporting", "Provide info if they sound confident"],
+            "correctAnswerIndex": 0,
+            "hint": "Always independently confirm identity before sharing anything."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Malware & Ransomware",
+    "subtitle": "Understand how malicious software spreads and how to defend against it.",
+    "scenario": "An employee downloads a 'free' software tool from an unofficial website. Shortly after, files on their computer become encrypted with a ransom note demanding payment. As a Digital Detective, trace how the infection happened and stop it from spreading.",
+    "tags": ["#MALWARE", "#RANSOMWARE", "INTERMEDIATE"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Free Download",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "Where is it safest to download software from?",
+            "options": ["Official vendor websites or app stores", "Any search result", "Torrent sites", "Pop-up ads"],
+            "correctAnswerIndex": 0,
+            "hint": "Stick to verified, trusted sources."
+          },
+          {
+            "question": "What does ransomware typically do?",
+            "options": ["Encrypts files and demands payment", "Speeds up your computer", "Improves security", "Deletes browser history"],
+            "correctAnswerIndex": 0,
+            "hint": "Think about what 'ransom' implies."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Containing the Spread",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is the first step after suspecting infection?",
+            "options": ["Disconnect from the network", "Keep working normally", "Pay the ransom", "Restart and ignore it"],
+            "correctAnswerIndex": 0,
+            "hint": "Isolating the device prevents further spread."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Public Wi-Fi Safety",
+    "subtitle": "Learn the risks of connecting to unsecured public networks.",
+    "scenario": "An employee connects to free airport Wi-Fi to check work email without using a VPN. A nearby attacker is intercepting unencrypted traffic on the same network. As a Digital Detective, identify the risks and secure the connection.",
+    "tags": ["#PUBLIC_WIFI", "#NETWORK_SECURITY", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: Airport Wi-Fi",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What tool helps protect data on public Wi-Fi?",
+            "options": ["A VPN", "A louder speaker", "A public hotspot", "Airplane mode"],
+            "correctAnswerIndex": 0,
+            "hint": "It encrypts your traffic over untrusted networks."
+          },
+          {
+            "question": "What should you avoid doing on public Wi-Fi?",
+            "options": ["Accessing sensitive accounts without protection", "Reading public news", "Checking the weather", "Browsing a map"],
+            "correctAnswerIndex": 0,
+            "hint": "Sensitive logins are riskiest on open networks."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Evil Twin Network",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is an 'evil twin' network?",
+            "options": ["A fake hotspot mimicking a real one", "A backup router", "A second firewall", "A VPN server"],
+            "correctAnswerIndex": 0,
+            "hint": "Attackers often clone legitimate network names."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Social Media Privacy",
+    "subtitle": "Protect your personal information from oversharing online.",
+    "scenario": "An employee's public social media posts reveal their job title, workplace, and daily routine, which an attacker uses to craft a convincing targeted phishing email. As a Digital Detective, identify the oversharing risks.",
+    "tags": ["#SOCIAL_MEDIA", "#PRIVACY", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: Oversharing Online",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What information should you limit sharing publicly?",
+            "options": ["Work details and daily routines", "Favorite movies", "General hobbies", "Public event attendance"],
+            "correctAnswerIndex": 0,
+            "hint": "Attackers use personal details to build targeted attacks."
+          },
+          {
+            "question": "What is this targeted attack technique called?",
+            "options": ["Spear phishing", "Mass mailing", "Cold calling", "Advertising"],
+            "correctAnswerIndex": 0,
+            "hint": "It's phishing tailored to a specific individual."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Privacy Settings",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What should you regularly review on social platforms?",
+            "options": ["Privacy and sharing settings", "Follower count only", "Profile picture", "App color theme"],
+            "correctAnswerIndex": 0,
+            "hint": "Settings control who can see your information."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Two-Factor Authentication",
+    "subtitle": "Understand why extra verification steps matter for account security.",
+    "scenario": "An attacker obtains an employee's password through a data breach but is blocked from logging in because a second verification step is required. As a Digital Detective, explore how this extra layer stopped the attack.",
+    "tags": ["#2FA", "#AUTHENTICATION", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: Blocked Login",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What does two-factor authentication add?",
+            "options": ["A second verification step beyond the password", "A stronger password only", "A new username", "A faster login"],
+            "correctAnswerIndex": 0,
+            "hint": "It combines something you know with something you have."
+          },
+          {
+            "question": "Which is a common second factor?",
+            "options": ["A code from an authenticator app", "A repeated password", "Your email address", "Your username"],
+            "correctAnswerIndex": 0,
+            "hint": "Think of apps that generate time-based codes."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: MFA Fatigue",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What should you do if you get repeated unexpected MFA prompts?",
+            "options": ["Deny them and report the activity", "Approve to make it stop", "Ignore silently", "Turn off MFA"],
+            "correctAnswerIndex": 0,
+            "hint": "Unexpected prompts may signal someone else has your password."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Safe Online Shopping",
+    "subtitle": "Spot fake stores and protect your payment information online.",
+    "scenario": "An employee finds an unbelievably cheap deal on a website with no contact information and an insecure checkout page. As a Digital Detective, determine if this store is legitimate.",
+    "tags": ["#ONLINE_SHOPPING", "#PAYMENT_SECURITY", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: Too-Good Deal",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is a red flag for a fake online store?",
+            "options": ["No contact info or secure checkout", "A return policy page", "Customer reviews", "A padlock icon in the browser"],
+            "correctAnswerIndex": 0,
+            "hint": "Legitimate stores provide transparency and security."
+          },
+          {
+            "question": "What should you check before entering payment details?",
+            "options": ["That the site uses HTTPS", "The site's font style", "The page loading speed", "The number of ads"],
+            "correctAnswerIndex": 0,
+            "hint": "Look for the padlock and 'https' in the address bar."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Payment Fraud",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What payment method offers more fraud protection?",
+            "options": ["Credit cards", "Wire transfers", "Gift cards", "Cryptocurrency to strangers"],
+            "correctAnswerIndex": 0,
+            "hint": "Some payment methods are much easier to reverse if fraud occurs."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Identity Theft",
+    "subtitle": "Learn how personal data is stolen and misused, and how to respond.",
+    "scenario": "An employee notices unfamiliar accounts opened in their name after their personal data was exposed in a breach. As a Digital Detective, trace the source and help them respond.",
+    "tags": ["#IDENTITY_THEFT", "#DATA_BREACH", "INTERMEDIATE"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: Unfamiliar Accounts",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is a common sign of identity theft?",
+            "options": ["Unrecognized accounts or charges", "A software update notice", "A slow computer", "A new email newsletter"],
+            "correctAnswerIndex": 0,
+            "hint": "Watch for activity you didn't authorize."
+          },
+          {
+            "question": "What should you do first after suspecting identity theft?",
+            "options": ["Report it and monitor your accounts", "Ignore it and wait", "Delete your accounts", "Change your Wi-Fi name"],
+            "correctAnswerIndex": 0,
+            "hint": "Quick reporting limits further damage."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Credit Monitoring",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What helps detect identity theft early?",
+            "options": ["Credit and account monitoring services", "Ignoring bank statements", "Using the same password everywhere", "Sharing your SSN publicly"],
+            "correctAnswerIndex": 0,
+            "hint": "Ongoing monitoring catches suspicious activity fast."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "title": "USB & Removable Media Safety",
+    "subtitle": "Understand the hidden dangers of unknown USB drives and devices.",
+    "scenario": "An employee finds a USB drive in the parking lot and plugs it into their work computer out of curiosity. As a Digital Detective, uncover why this is dangerous.",
+    "tags": ["#USB_SECURITY", "#PHYSICAL_SECURITY", "INTERMEDIATE"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Found Drive",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "Why is plugging in an unknown USB risky?",
+            "options": ["It may contain malware", "It could be slow", "It might be full", "It could be a duplicate"],
+            "correctAnswerIndex": 0,
+            "hint": "Unknown devices can be pre-loaded with malicious software."
+          },
+          {
+            "question": "What should you do with a found USB drive?",
+            "options": ["Report it to IT/security", "Plug it in to see what's on it", "Give it to a coworker", "Keep it for personal use"],
+            "correctAnswerIndex": 0,
+            "hint": "Let security professionals examine it safely."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: USB Drop Attack",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is this tactic of leaving infected drives called?",
+            "options": ["USB drop attack", "Drive-by download", "Tailgating", "Baiting call"],
+            "correctAnswerIndex": 0,
+            "hint": "Attackers 'drop' devices hoping curiosity takes over."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Mobile Device Security",
+    "subtitle": "Secure smartphones and tablets against common mobile threats.",
+    "scenario": "An employee installs an app from an unofficial store that requests excessive permissions, secretly accessing contacts and messages. As a Digital Detective, identify the risky behavior.",
+    "tags": ["#MOBILE_SECURITY", "#APP_PERMISSIONS", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Risky App",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What should you check before installing an app?",
+            "options": ["Requested permissions and source", "App icon color", "Number of downloads only", "App file size"],
+            "correctAnswerIndex": 0,
+            "hint": "Review what access an app actually needs."
+          },
+          {
+            "question": "Where should mobile apps be downloaded from?",
+            "options": ["Official app stores", "Random websites", "Email attachments", "Text message links"],
+            "correctAnswerIndex": 0,
+            "hint": "Official stores vet apps for security."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Lost Device",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What helps protect data if a phone is lost?",
+            "options": ["Screen lock and remote wipe", "A colorful case", "A long charger cable", "A loud ringtone"],
+            "correctAnswerIndex": 0,
+            "hint": "Security features can lock or erase data remotely."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Data Backup & Recovery",
+    "subtitle": "Learn why regular backups are essential for resilience against attacks.",
+    "scenario": "After a ransomware attack encrypts company files, an employee realizes there are no recent backups available, making recovery nearly impossible. As a Digital Detective, evaluate the backup strategy failure.",
+    "tags": ["#BACKUP", "#DATA_RECOVERY", "INTERMEDIATE"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: No Recent Backup",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "Why are regular backups important?",
+            "options": ["They allow recovery without paying ransom", "They speed up your computer", "They reduce email spam", "They improve Wi-Fi signal"],
+            "correctAnswerIndex": 0,
+            "hint": "Backups are your safety net against data loss."
+          },
+          {
+            "question": "Where should backups ideally be stored?",
+            "options": ["Offline or in a separate secure location", "On the same infected device", "In an unprotected shared folder", "Nowhere, it's unnecessary"],
+            "correctAnswerIndex": 0,
+            "hint": "Isolated backups can't be encrypted by the same attack."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: The 3-2-1 Rule",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What does the 3-2-1 backup rule recommend?",
+            "options": ["3 copies, 2 media types, 1 offsite", "3 passwords, 2 emails, 1 device", "3 backups a year", "3 people managing one backup"],
+            "correctAnswerIndex": 0,
+            "hint": "It's a well-known best practice for data redundancy."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Insider Threats",
+    "subtitle": "Understand risks that come from within an organization.",
+    "scenario": "A disgruntled employee about to leave the company downloads sensitive customer data onto a personal drive before their last day. As a Digital Detective, identify the insider threat indicators.",
+    "tags": ["#INSIDER_THREAT", "#DATA_PROTECTION", "ADVANCED"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Departing Employee",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is a warning sign of insider threat activity?",
+            "options": ["Unusual bulk data downloads", "Attending team meetings", "Using company email", "Taking scheduled leave"],
+            "correctAnswerIndex": 0,
+            "hint": "Look for abnormal access or data transfer patterns."
+          },
+          {
+            "question": "What control helps limit insider risk?",
+            "options": ["Access based on job role (least privilege)", "Giving everyone admin access", "No monitoring at all", "Sharing all passwords"],
+            "correctAnswerIndex": 0,
+            "hint": "Restricting access reduces potential damage."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Offboarding Process",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What should happen immediately when an employee leaves?",
+            "options": ["Revoke all system access", "Wait a week to revoke access", "Keep their accounts active", "Only remove email access"],
+            "correctAnswerIndex": 0,
+            "hint": "Prompt deprovisioning prevents unauthorized access."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Physical Security & Tailgating",
+    "subtitle": "Recognize how attackers exploit physical access to secure areas.",
+    "scenario": "A stranger without a badge follows closely behind an employee through a secured office door, relying on politeness to gain entry. As a Digital Detective, identify this physical security breach.",
+    "tags": ["#PHYSICAL_SECURITY", "#TAILGATING", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Unbadged Visitor",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is this technique called?",
+            "options": ["Tailgating", "Phishing", "Spoofing", "Sniffing"],
+            "correctAnswerIndex": 0,
+            "hint": "It involves following someone through a secured entry point."
+          },
+          {
+            "question": "What should you do if a stranger tries to follow you in?",
+            "options": ["Politely ask them to badge in separately", "Hold the door open", "Ignore it", "Assume they work there"],
+            "correctAnswerIndex": 0,
+            "hint": "Everyone should use their own access credentials."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Visitor Management",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What helps prevent unauthorized physical access?",
+            "options": ["Visitor sign-in and escort policies", "Leaving doors propped open", "No security cameras", "Shared building keys"],
+            "correctAnswerIndex": 0,
+            "hint": "Formal visitor tracking improves accountability."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Cloud Security Basics",
+    "subtitle": "Learn how to keep cloud-stored data and accounts protected.",
+    "scenario": "An employee sets a shared cloud folder containing sensitive files to 'anyone with the link can view,' unintentionally exposing it to the public. As a Digital Detective, identify the misconfiguration.",
+    "tags": ["#CLOUD_SECURITY", "#DATA_PROTECTION", "INTERMEDIATE"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Open Folder",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What caused the data exposure?",
+            "options": ["Overly permissive sharing settings", "Using a strong password", "Enabling two-factor authentication", "Regular software updates"],
+            "correctAnswerIndex": 0,
+            "hint": "Sharing settings determine who can access files."
+          },
+          {
+            "question": "What is a best practice for cloud sharing?",
+            "options": ["Share only with specific people who need access", "Always share publicly for convenience", "Never use passwords", "Disable all permissions checks"],
+            "correctAnswerIndex": 0,
+            "hint": "Limit access to only those who require it."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Cloud Account Compromise",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What extra protection secures cloud accounts?",
+            "options": ["Multi-factor authentication", "Sharing login credentials", "Disabling alerts", "Using default passwords"],
+            "correctAnswerIndex": 0,
+            "hint": "Extra verification steps protect account access."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "title": "IoT Device Security",
+    "subtitle": "Secure smart devices that connect to home and office networks.",
+    "scenario": "A smart office camera is left with its default factory password, allowing an attacker to access the live feed remotely. As a Digital Detective, identify the vulnerability.",
+    "tags": ["#IOT_SECURITY", "#NETWORK_SECURITY", "INTERMEDIATE"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Default Password",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is the main vulnerability here?",
+            "options": ["Using the factory default password", "Having a camera at all", "Using Wi-Fi", "Placing it indoors"],
+            "correctAnswerIndex": 0,
+            "hint": "Default credentials are widely known and easily guessed."
+          },
+          {
+            "question": "What should you do when setting up a new IoT device?",
+            "options": ["Change the default password immediately", "Leave the default settings", "Connect it to every network", "Skip firmware updates"],
+            "correctAnswerIndex": 0,
+            "hint": "Always customize security settings out of the box."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Network Segmentation",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What helps isolate risky IoT devices?",
+            "options": ["Putting them on a separate network segment", "Connecting them to the main office network", "Disabling all firewalls", "Sharing admin credentials widely"],
+            "correctAnswerIndex": 0,
+            "hint": "Segmentation limits damage if a device is compromised."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Cyberbullying & Online Harassment",
+    "subtitle": "Understand how to recognize, respond to, and prevent online harassment.",
+    "scenario": "A colleague receives a series of threatening and abusive messages from an anonymous account on a workplace chat platform. As a Digital Detective, help identify how to respond appropriately.",
+    "tags": ["#CYBERBULLYING", "#ONLINE_SAFETY", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Anonymous Messages",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What should you do first if you receive harassing messages?",
+            "options": ["Save evidence and report it", "Reply angrily", "Delete everything immediately", "Ignore it and hope it stops"],
+            "correctAnswerIndex": 0,
+            "hint": "Documentation helps when reporting to authorities or platforms."
+          },
+          {
+            "question": "Who should workplace harassment be reported to?",
+            "options": ["HR or designated security/reporting channels", "No one, it's personal", "Social media followers", "Only close friends"],
+            "correctAnswerIndex": 0,
+            "hint": "Organizations typically have formal reporting procedures."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Blocking & Protecting",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What platform feature can help stop ongoing harassment?",
+            "options": ["Blocking and reporting the account", "Sharing personal contact info", "Engaging further", "Making your profile fully public"],
+            "correctAnswerIndex": 0,
+            "hint": "Most platforms offer built-in safety tools."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "title": "Safe Software Downloads",
+    "subtitle": "Avoid trojanized software and verify authenticity before installing.",
+    "scenario": "An employee searches for a free version of paid software and downloads a 'cracked' installer from a third-party site, which secretly bundles malware. As a Digital Detective, identify the danger signs.",
+    "tags": ["#SOFTWARE_SECURITY", "#MALWARE", "BEGINNER"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Cracked Installer",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "Why are cracked software downloads dangerous?",
+            "options": ["They often contain hidden malware", "They are always faster", "They come with tech support", "They are legally distributed"],
+            "correctAnswerIndex": 0,
+            "hint": "Pirated software is a common malware distribution method."
+          },
+          {
+            "question": "What should you verify before installing software?",
+            "options": ["Its source and digital signature", "Its file color icon", "The download speed", "How many ads are on the page"],
+            "correctAnswerIndex": 0,
+            "hint": "Legitimate publishers sign their software."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Verifying Checksums",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What can confirm a downloaded file hasn't been tampered with?",
+            "options": ["Comparing file checksums/hashes", "Checking the file size roughly", "Reading the filename", "Asking a friend"],
+            "correctAnswerIndex": 0,
+            "hint": "Hashes provide a unique fingerprint for file integrity."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "title": "Business Email Compromise",
+    "subtitle": "Detect sophisticated email fraud targeting financial transactions.",
+    "scenario": "A finance employee receives an email appearing to be from the CEO urgently requesting a wire transfer to a new vendor account, bypassing normal approval processes. As a Digital Detective, uncover the fraud.",
+    "tags": ["#BEC", "#EMAIL_SECURITY", "ADVANCED"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Urgent Wire Request",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What is a major red flag in this scenario?",
+            "options": ["Urgency bypassing normal approval steps", "The email being sent during work hours", "The CEO using email", "A formal email signature"],
+            "correctAnswerIndex": 0,
+            "hint": "Fraudsters pressure victims to skip verification procedures."
+          },
+          {
+            "question": "What should the employee do before transferring funds?",
+            "options": ["Verify the request through a separate trusted channel", "Send the money quickly to help the CEO", "Reply to the same email asking questions", "Forward it to a coworker to decide"],
+            "correctAnswerIndex": 0,
+            "hint": "Always confirm large requests outside of email, like by phone."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Spoofed Domains",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What technique do BEC attackers often use with email addresses?",
+            "options": ["Slightly altered lookalike domains", "Only using verified company domains", "Sending from personal Gmail with full disclosure", "Using no email address at all"],
+            "correctAnswerIndex": 0,
+            "hint": "A single changed letter can make a domain look legitimate at a glance."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "title": "Incident Reporting & Response",
+    "subtitle": "Learn the importance of quickly reporting and responding to security incidents.",
+    "scenario": "An employee accidentally clicks a phishing link and enters their credentials, but hesitates to report it out of fear of getting in trouble. As a Digital Detective, explain why fast reporting matters.",
+    "tags": ["#INCIDENT_RESPONSE", "#SECURITY_CULTURE", "INTERMEDIATE"],
+    "levels": [
+      {
+        "id": 1,
+        "title": "LEVEL 1",
+        "subtitle": "Case 1: The Hesitant Employee",
+        "isLocked": false,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "Why is it important to report incidents immediately?",
+            "options": ["It limits damage and enables a fast response", "It gets coworkers in trouble", "It delays the investigation", "It's only necessary for major breaches"],
+            "correctAnswerIndex": 0,
+            "hint": "Quick action can stop an attack from spreading further."
+          },
+          {
+            "question": "What should happen after credentials are compromised?",
+            "options": ["Change the password and report it immediately", "Wait to see if anything bad happens", "Tell only a friend", "Keep using the same password"],
+            "correctAnswerIndex": 0,
+            "hint": "Fast credential resets reduce the attacker's window of access."
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "LEVEL 2",
+        "subtitle": "Case 2: Building a Reporting Culture",
+        "isLocked": true,
+        "isCompleted": false,
+        "questions": [
+          {
+            "question": "What encourages employees to report mistakes without fear?",
+            "options": ["A blameless, supportive security culture", "Strict punishment for every mistake", "Ignoring all reports", "Public shaming of mistakes"],
+            "correctAnswerIndex": 0,
+            "hint": "People report issues faster when they aren't afraid of blame."
+          }
+        ]
+      }
+    ]
+  }
+]
